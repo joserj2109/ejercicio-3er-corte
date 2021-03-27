@@ -1,0 +1,451 @@
+﻿/*
+ * Created by SharpDevelop.
+ * User: josem
+ * Date: 26/3/2021
+ * Time: 5:07 p. m.
+ * 
+ * To change this template use Tools | Options | Coding | Edit Standard Headers.
+ */
+using System;
+
+namespace solucion_sharp1
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			string dato = "";
+			double peso = 0.0;
+			int edad = 0;
+			int actividad = 0;
+			int edad2 = 0;
+			
+			
+			Console.WriteLine("¿Bienvenid@! >Este programa indica cuanto debe comer tu perro:)");
+			do {
+			Console.WriteLine("Por favor, ¿me podrias indicar la edad de tu perro?");
+			Console.WriteLine("1)Adulto (mayor a 12 meses)");
+			Console.WriteLine("2)Cachorro(menor a 12 meses)");
+			
+			dato = Console.ReadLine();
+			edad = Convert.ToInt32(dato);
+			if (edad>=3){
+				
+				Console.WriteLine("La opcion no es valida, ingresela de nuevo por favor.");
+			}
+			}while (edad >=3);
+			
+			Console.WriteLine("Ok! ahora, ¿me podrias indicar el peso de tu canino?");
+			dato = Console.ReadLine();
+			
+			peso = Convert.ToDouble(dato);
+			
+			do{
+			Console.WriteLine("Por ultimo, ¿me podrias indicar su nivel de actividad fisica?");
+			Console.WriteLine("1)Alta");
+			Console.WriteLine("2)Media");
+			Console.WriteLine("3)Poca");
+			dato=Console.ReadLine();
+			actividad = Convert.ToInt32(dato);
+			
+			if (actividad>=4){
+				
+				Console.WriteLine("La opcion no es valida, ingresela de nuevo por favor.");
+			}
+			
+			} while( actividad>=4);
+			if (edad <=1)
+			{	
+				
+				if (peso<=5 && peso>= 2)
+				{	
+					switch (actividad) {
+						
+					case 1:
+						
+						Console.WriteLine("Su perro debe comer aproximadamente entre 60 y 115 gramos de comida para perros.");
+						
+						break;
+						
+					case 2:
+						
+						Console.WriteLine("Su perro debe comer aproximadamente entre 55 y 100 gramos de comida para perros.");
+
+						break;
+						
+					case 3:
+						
+						Console.WriteLine("Su perro debe comer aproximadamente entre 45 y 85 gramos de comida para perros.");
+
+						break;
+					
+					}
+                }
+				
+				if (peso<=10 && peso>= 5){	
+					
+					
+					switch (actividad) {
+						
+					case 1:
+						
+						Console.WriteLine("Su perro debe comer aproximadamente entre 115 y 190 gramos de comida para perros.");
+						
+						break;
+						
+					case 2:
+						
+						Console.WriteLine("Su perro debe comer aproximadamente entre 100 y 170 gramos de comida para perros.");
+
+						break;
+						
+					case 3:
+						
+						Console.WriteLine("Su perro debe comer aproximadamente entre 85 y 145 gramos de comida para perros.");
+
+						break;
+						
+					}
+                }
+							
+				if (peso<=15 && peso>= 10){	
+					
+					
+					switch (actividad) {
+						
+					case 1:
+						
+						Console.WriteLine("Su perro debe comer aproximadamente entre 195 y 225 gramos de comida para perros.");
+						
+						break;
+						
+					case 2:
+						
+						Console.WriteLine("Su perro debe comer aproximadamente entre 170 y 225 gramos de comida para perros.");
+
+						break;
+						
+					case 3:
+						
+						Console.WriteLine("Su perro debe comer aproximadamente entre 145 y 195 gramos de comida para perros.");
+
+						break;		
+									
+					}
+                }
+				
+				if (peso<=25 && peso>= 15){	
+					
+					
+					switch (actividad) {
+						
+					case 1:
+						
+						Console.WriteLine("Su perro debe comer aproximadamente entre 255 y 380 gramos de comida para perros.");
+						
+						break;
+						
+					case 2:
+						
+						Console.WriteLine("Su perro debe comer aproximadamente entre 225 y 330 gramos de comida para perros.");
+
+						break;
+						
+					case 3:
+						
+						Console.WriteLine("Su perro debe comer aproximadamente entre 195 y 285 gramos de comida para perros.");
+
+						break;		
+									
+					}
+                }
+				
+				if (peso<=40 && peso>= 25){	
+					
+					
+					switch (actividad) {
+						
+					case 1:
+						
+						Console.WriteLine("Su perro debe comer aproximadamente entre 380 y 535 gramos de comida para perros.");
+						
+						break;
+						
+					case 2:
+						
+						Console.WriteLine("Su perro debe comer aproximadamente entre 330 y 475 gramos de comida para perros.");
+
+						break;
+						
+					case 3:
+						
+						Console.WriteLine("Su perro debe comer aproximadamente entre 285 y 410 gramos de comida para perros.");
+
+						break;		
+									
+					}
+                }
+					
+				if (peso<=55 && peso>= 40){	
+					
+					
+					switch (actividad) {
+						
+					case 1:
+						
+						Console.WriteLine("Su perro debe comer aproximadamente entre 535 y 680 gramos de comida para perros.");
+						
+						break;
+						
+					case 2:
+						
+						Console.WriteLine("Su perro debe comer aproximadamente entre 475 y 600 gramos de comida para perros.");
+
+						break;
+						
+					case 3:
+						
+						Console.WriteLine("Su perro debe comer aproximadamente entre 410 y 520 gramos de comida para perros.");
+
+						break;		
+									
+					}
+                }
+				
+
+                if (peso<=70 && peso>= 55){	
+					
+					
+					switch (actividad) {
+						
+					case 1:
+						
+						Console.WriteLine("Su perro debe comer aproximadamente entre 680 y 820 gramos de comida para perros.");
+						
+						break;
+						
+					case 2:
+						
+						Console.WriteLine("Su perro debe comer aproximadamente entre 600 y 720 gramos de comida para perros.");
+
+						break;
+						
+					case 3:
+						
+						Console.WriteLine("Su perro debe comer aproximadamente entre 520 y 620 gramos de comida para perros.");
+
+						break;		
+									
+					}
+                }		
+
+				if (peso>=71){	
+					
+					
+					switch (actividad) {
+						
+					case 1:
+						
+						Console.WriteLine("Su perro debe comer aproximadamente entre 820 y 985 gramos de comida para perros.");
+						
+						break;
+						
+					case 2:
+						
+						Console.WriteLine("Su perro debe comer aproximadamente entre 720 y 870 gramos de comida para perros.");
+
+						break;
+						
+					case 3:
+						
+						Console.WriteLine("Su perro debe comer aproximadamente entre 620 y 750 gramos de comida para perros.");
+
+						break;		
+									
+					}
+                }		
+					
+			}		
+			
+			if (edad >=2 && edad<=2)
+				
+				
+			
+			{	
+				do{
+				Console.WriteLine("¿Cual de estas edades se encuentra su perro?");
+				Console.WriteLine("1) 2 meses o menor");
+				Console.WriteLine("2) 3 meses ");
+				Console.WriteLine("3) 4 meses ");
+				Console.WriteLine("4) 5 meses ");
+				Console.WriteLine("5) Entre 6 y 12 meses ");
+				
+				dato=Console.ReadLine();
+				
+				edad2= Convert.ToInt32(dato);
+				
+				if (edad2>=6){
+				
+				Console.WriteLine("La opcion no es valida, ingresela de nuevo por favor.");
+			}
+				}while(edad2 >=6);
+				
+				if (peso<=9 && peso >= 2){
+					
+					switch (edad2) {
+													
+						case 1:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 50 y 95 gramos de comida para perros.");
+							break;
+						case 2:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 60 y 110 gramos de comida para perros.");
+							break;
+						case 3:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 60 y 115 gramos de comida para perros.");
+							break;	
+						case 4:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 60 y 115 gramos de comida para perros.");
+							break;
+						case 5:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 55 y 110 gramos de comida para perros.");	
+							break;
+					   }
+							
+				    }
+				
+			if (peso<=17 && peso >= 10){
+					
+					switch (edad2) {
+													
+						case 1:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 155 y 215 gramos de comida para perros.");
+							break;
+						case 2:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 185 y 265 gramos de comida para perros.");
+							break;
+						case 3:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 195 y 285 gramos de comida para perros.");
+							break;	
+						case 4:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 190 y 285 gramos de comida para perros.");
+							break;
+						case 5:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 185 y 280 gramos de comida para perros.");	
+							break;
+					   }
+							
+				    }
+				if (peso<=32 && peso >= 18){
+					
+					switch (edad2) {
+													
+						case 1:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 270 y 300 gramos de comida para perros.");
+							break;
+						case 2:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 350 y 400 gramos de comida para perros.");
+							break;
+						case 3:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 375 y 445 gramos de comida para perros.");
+							break;	
+						case 4:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 375 y 450 gramos de comida para perros.");
+							break;
+						case 5:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 370 y 450 gramos de comida para perros.");	
+							break;
+					   }
+							
+				    }
+			
+			if (peso<=50 && peso >= 33){
+					
+					switch (edad2) {
+													
+						case 1:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 355 y 405 gramos de comida para perros.");
+							break;
+						case 2:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 475 y 545 gramos de comida para perros.");
+							break;
+						case 3:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 525 y 610 gramos de comida para perros.");
+							break;	
+						case 4:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 530 y 625 gramos de comida para perros.");
+							break;
+						case 5:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 625 gramos de comida para perros.");	
+							break;
+					   }
+							
+				    }
+				if (peso<=70 && peso >= 51){
+					
+					switch (edad2) {
+													
+						case 1:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 450 y 485 gramos de comida para perros.");
+							break;
+						case 2:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 605 y 670 gramos de comida para perros.");
+							break;
+						case 3:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 685 gramos de comida para perros.");
+							break;	
+						case 4:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 685 gramos de comida para perros.");
+							break;
+						case 5:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 685 gramos de comida para perros.");	
+							break;
+					   }
+							
+				    }
+				
+				if (peso>=71){
+					
+					switch (edad2) {
+													
+						case 1:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 580 gramos de comida para perros.");
+							break;
+						case 2:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 580 gramos de comida para perros.");
+							break;
+						case 3:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 580 gramos de comida para perros.");
+							break;	
+						case 4:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 580 gramos de comida para perros.");
+							break;
+						case 5:
+							Console.WriteLine("Su perro debe comer aproximadamente entre 580 gramos de comida para perros.");	
+							break;
+					   }
+							
+				    }
+				
+				
+			}
+			
+			Console.ReadLine();
+			
+						
+						
+				
+				
+					
+			
+			
+				
+			
+			
+			
+			
+			
+		}
+	}
+}
+					
+					
